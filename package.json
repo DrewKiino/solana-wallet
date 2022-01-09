@@ -1,0 +1,61 @@
+{
+  "name": "solana-wallet",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/data-grid": "^4.0.0-alpha.33",
+    "@solana/spl-token-registry": "^0.2.160",
+    "@solana/web3.js": "^1.20.0",
+    "@types/node": "^15.12.5",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "bootstrap": "^5.0.2",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "mocha": "^9.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "yarn build && yarn global add serve && serve -s build",
+    "test": "env TS_NODE_PROJECT=\"tsconfig.test.json\" mocha --require ts-node/register 'tests/**/*.ts'",
+    "eject": "react-scripts eject",
+    "watch": "px tsc -w"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.19",
+    "@types/expect": "^24.3.0",
+    "@types/jest": "^26.0.23",
+    "@types/mocha": "^8.2.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.29.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.24.0"
+  }
+}
